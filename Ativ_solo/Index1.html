@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<!-- Comentários -->
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Zooworld</title>
+        <link rel="stylesheet" type="text/css" href="Estilo/CSS.css" />
+        <link rel= "icon" href="Imagens/Panda.png" >
+        <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="Scripts/jscript.js"></script>
+    </head>
+    <body>
+        <header>
+            <div>
+                <select  id="sel_animal" onchange="funTrocaAnimal()">
+                    <option value="" selected disabled>Selecione o Animal...</option>
+                    <option value="Coruja">Coruja</option>
+                    <option value="Girafa">Girafa</option>
+                    <option value="Servo">Servo</option>
+                    <option value="Tigre">Tigre</option>
+                </select>
+            </div>
+            <div>
+                <a href="#top"><img src="Imagens/Home.png" alt="Inicío" title="Inicío" /></a>
+                <a onclick="location.reload()"><img src="Imagens/Reload.png" alt="Recarregar" title="Recarregar" /></a>
+                <a href="#habitat"><img src="Imagens/Panda.png" alt="Panda" title="Panda" /></a>
+                <a href="#ing"><img src="Imagens/formulário.png" alt="Formulário" title="Formulário"/></a>
+                <a href="#con"><img src="Imagens/telefone.png" alt="Contato" title="Contato"/></a>
+            </div>
+            <div>
+                <select id="sel_fonte" onchange="funMudaFonte()">
+                <option value="" selected disabled>Selecione a Fonte...</option>
+                <option value="Oxygen">Oxygen</option>
+                <option value="Ranchers">Ranchers</option>
+                </select>
+            </div>
+        </header>
+        <main id="principal">
+            <div class="container_animal">
+            <h1 id="texto_animal">|Zoológico Virtual|</h1>
+            <img id="img_animal" src="Imagens/Selva.jpg" alt="Selva" title="Selva" />
+            </div>
+            <h1 id="habitat">Biomas</h1>
+            <div class="container_habitat">
+                <img id="img_habitat" src="Imagens/Panda.png" alt="Panda" title="Panda"/>
+                <p id="p_habitat">Selecione um Bioma</p>
+            </div>
+            <div class="container">
+                <div><img src="Imagens/floresta.jpg" onmouseover="funHabitat(this.alt, this.src)" alt="Floresta" /></div>
+                <div><img src="Imagens/montes.jpg" onmouseover="funHabitat(this.alt, this.src)" alt="Montes" /></div>
+            
+            </div>
+
+            <h2 id="ing">Ingressos (pós pandemia)</h2>
+
+                <form method="GET">
+
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" name="cpf" maxlength="12" required/>
+
+                <label for="qtd">Quantidade</label>
+                <input type="number" id="qtd" name="qtd" min="1" max="20" required/>
+
+                <input type="submit" class="botao" value="Solicitar"/>
+
+                </form>
+
+                <h2 id="con">Contato</h2>
+
+                <form method="GET">
+
+                    <p>Marque uma visita, quando a pandemia acabar, entraremos em contato! :</p>
+
+                    <input type="text" id="nome" name="nome" maxlength="38" required placeholder="Nome"/>
+
+                    <input type="email" id="email" name="email" maxlength="38" required placeholder="E-mail"/>
+
+                    <input type="text" id="fone" name="fone" maxlength="17" required placeholder="Telefone"/>
+
+                    <input type="submit" class="botao" value="Enviar"/>
+
+        </main>
+    </body>
+</html>

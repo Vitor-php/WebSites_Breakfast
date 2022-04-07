@@ -1,0 +1,180 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Passion One', cursive;
+    text-align: center;
+    color:Chartreuse;
+}
+img {
+    width: 100%;
+}
+header {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: LimeGreen;
+    z-index: 1;
+    box-shadow: 5px 5px 10px chartreuse;
+}
+header div {
+    width: 33.3%; 
+}
+header img {
+    height: 30px;
+    width: auto;
+}
+#sel_animal, #sel_fonte {
+    width: 95%;
+    height: 40px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    color: inherit;
+    border: none;
+}
+main {
+    position: absolute;
+    top: 60px;
+    background-color: lightcyan;
+}
+.container_animal {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 60%;
+}
+#img_animal {
+    box-shadow: 4px 4px 10px green;
+    border-radius: 10%;
+}
+#habitat {
+    padding-top: 100px;
+}
+.container_habitat {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    width: 45%;
+    background-color: green;
+    border-radius: 10%;
+    padding: 10px;
+}
+#img_habitat {
+    width: 65%;
+    padding: 10%;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    width: 100%;
+    background-color: limegreen;
+    border-radius: 10%;
+}
+.container div {
+    width: 23%;
+    padding: 10px;
+}
+.Coruja {
+    background: linear-gradient(to bottom, dimgray, grey, ForestGreen);
+    color: black;
+}
+.Girafa {
+    background: radial-gradient(circle, olive, darkkhaki, darkgoldenrod);
+    color: black;
+}
+.Servo {
+    background: radial-gradient(circle, darkcyan, teal, mediumspringgreen);
+    color: black;
+}
+.Tigre {
+    background: linear-gradient(to bottom, olive, red,orange);
+    color: black;
+}
+}
+h2 {
+    margin: 0;
+    font-size: 2rem;
+    background:  radial-gradient(circle, MediumSeaGreen, SeaGreen)
+    
+}
+#ag, #ing, #con {
+    padding-top: 40px;
+}
+form {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 50px auto;
+}
+label, #qtd, #cpf, .botao {
+font-size:  1.25rem;
+padding: 5px;
+border-radius: 4px;
+width: 70%;
+}
+#qtd, #cpf, .botao {
+    font-family: inherit;
+    text-align: center;
+    border: none;
+    margin-bottom: 20px;
+}
+label, .botao {
+    background-color: green;
+    color: azure;
+    width: 70%;
+}
+#nome, #email, #fone {
+    font-family: inherit;
+    font-size: 1rem;
+    width: 70%;
+    border: none;
+    border-radius: 4px;
+    background-position: 9px 9px;
+    background-repeat: no-repeat;
+    padding: 10px 10px 10px 40px;
+    margin-bottom: 20px;
+}
+#nome {
+    background-image: url(../Imagens/user_peq.png);
+}
+#email {
+    background-image: url(../Imagens/correio_peq.png);
+}
+#fone {
+    background-image: url(../Imagens/phone_peq.png);
+}
+form p {
+    font-weight: normal;
+}
+@media (min-width: 768px) {
+    header img {
+        height: 45px;
+    }
+    #sel_animal, #sel_fonte {
+        width: 70%;
+        font-size: 1rem;
+    }
+    .container_animal {
+        width: 30%;
+    }
+    .container_habitat {
+        width: 23%;
+    }
+    .container {
+        width: 60%;
+        flex-wrap: nowrap;
+    }
+    .container div {
+        padding: 20px;
+    }
+
+}
